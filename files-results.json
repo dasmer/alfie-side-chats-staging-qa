@@ -1,0 +1,18 @@
+[
+  {
+    "case": "Generated file exact bytes",
+    "status": 200,
+    "result": "pass",
+    "byteCount": 15
+  },
+  {
+    "case": "Foreign download",
+    "status": 404,
+    "result": "pass"
+  },
+  {
+    "case": "Unauthenticated download",
+    "status": 401,
+    "result": "pass"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "case": "Replace idle originating side session",
+    "status": 200,
+    "result": "pass"
+  },
+  {
+    "case": "Original account file survives session replacement",
+    "status": 200,
+    "result": "pass"
+  }
+]

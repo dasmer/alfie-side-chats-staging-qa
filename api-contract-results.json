@@ -1,0 +1,182 @@
+[
+  {
+    "case": "foreign history",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "foreign session",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "foreign rename",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "foreign cancel",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "foreign turn",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "foreign events",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "foreign reset",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown history",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown session",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown rename",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown cancel",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown turn",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown events",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "unknown reset",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "malformed history",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "malformed session",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "malformed rename",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "malformed cancel",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "malformed turn",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "malformed events",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "malformed reset",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "Main rename denied",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  },
+  {
+    "case": "invalid rename 0",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "invalid rename 3",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "invalid rename 101",
+    "status": 422,
+    "expected": 422,
+    "result": "pass"
+  },
+  {
+    "case": "100 character title",
+    "status": 200,
+    "expected": 200,
+    "result": "pass"
+  },
+  {
+    "case": "Unicode rename",
+    "status": 200,
+    "expected": 200,
+    "result": "pass"
+  },
+  {
+    "case": "stale reset denied",
+    "status": 409,
+    "expected": 409,
+    "result": "pass"
+  },
+  {
+    "case": "unauthenticated chats",
+    "status": 401,
+    "expected": 401,
+    "result": "pass"
+  },
+  {
+    "case": "foreign Files UUID",
+    "status": 404,
+    "expected": 404,
+    "result": "pass"
+  }
+]

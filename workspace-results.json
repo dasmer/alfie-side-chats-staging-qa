@@ -1,0 +1,15 @@
+[
+  {
+    "case": "Main writes marker and independent side reads exact marker",
+    "result": "pass",
+    "evidence": "web-02-shared-workspace-side.jpg"
+  },
+  {
+    "case": "Read-only staging database: four side chats share Main environment after source reset",
+    "result": "pass"
+  },
+  {
+    "case": "Read-only staging database: every chat has a distinct session",
+    "result": "pass"
+  }
+]

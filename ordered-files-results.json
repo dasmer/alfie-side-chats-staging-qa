@@ -1,0 +1,10 @@
+[
+  {
+    "case": "Ordered attachment ORDER-ONE-731",
+    "result": "pass"
+  },
+  {
+    "case": "Ordered attachment ORDER-TWO-731",
+    "result": "pass"
+  }
+]
