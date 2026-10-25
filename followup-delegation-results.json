@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Synthetic speech recognized and delegated file returned",
+    "status": "passed",
+    "exact_bytes": "Cedar Voice Proof"
+  },
+  {
+    "name": "Main call-context attribution",
+    "status": "passed",
+    "contains_call": false
+  },
+  {
+    "name": "Cedar call-context attribution",
+    "status": "passed",
+    "contains_call": true
+  },
+  {
+    "name": "Main delegated output transcript attribution",
+    "status": "passed",
+    "contains_delegated_file": false
+  },
+  {
+    "name": "Cedar delegated output transcript attribution",
+    "status": "passed",
+    "contains_delegated_file": true
+  }
+]

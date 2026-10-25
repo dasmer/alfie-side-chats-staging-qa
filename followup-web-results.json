@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Web native file-picker selection, upload and exact attachment answer",
+    "status": "passed",
+    "evidence": "WEB-PICKER-572; web-17-file-picker-upload-answer.jpg"
+  },
+  {
+    "name": "Web account Files preview for UI-uploaded attachment",
+    "status": "passed",
+    "evidence": "web-18-picker-upload-files-preview.jpg"
+  },
+  {
+    "name": "Web native delete confirmation and absence after reload",
+    "status": "passed",
+    "evidence": "File count 7 to 6; deleted row count 0 after reload; web-19-picker-upload-deleted-after-reload.jpg"
+  },
+  {
+    "name": "Rename Cancel focus restoration",
+    "status": "passed",
+    "evidence": "Close chats focused; Escape returns Open chats"
+  },
+  {
+    "name": "Rename Save focus restoration",
+    "status": "passed",
+    "evidence": "Waited rename field hidden; Close chats focused; Escape returns Open chats"
+  }
+]

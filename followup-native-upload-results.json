@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Native system Files picker selection and upload",
+    "status": "passed",
+    "evidence": "Original app Info.plist restored; synthetic fixture in Simulator local Files provider; ios-26-file-picker.png and ios-27-picker-upload-composer.png"
+  },
+  {
+    "name": "Exact answer from native picker-uploaded file",
+    "status": "passed",
+    "evidence": "IOS-PICKER-573; ios-28-picker-upload-answer.png; /tmp/lean-followup-picker6.xcresult"
+  }
+]

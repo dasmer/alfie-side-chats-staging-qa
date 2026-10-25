@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Simulator Live connects through staging",
+    "status": "passed",
+    "evidence": "Call duration shown; ios-23-live-connected.png"
+  },
+  {
+    "name": "Minimized Live locks chat switching",
+    "status": "passed",
+    "evidence": "open-chats disabled; ios-24-live-chat-switch-locked.png"
+  },
+  {
+    "name": "End Live returns to chat",
+    "status": "passed",
+    "evidence": "live-call-end disappears; ios-25-live-ended.png"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Account one-call guard across Main and active side Live",
+    "status": "passed",
+    "http_status": 409,
+    "body": {
+      "detail": "End your existing voice call before starting another."
+    }
+  }
+]
