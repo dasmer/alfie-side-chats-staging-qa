@@ -84,4 +84,6 @@ An initial upload/reset smoke assumed a submitted turn was already busy; the pro
 
 ## Review and handoff
 
+Temporary UI project/build, OTP bridge, QA auth files and credential-bearing setup traces were removed. Four passing Simulator result bundles and exported screenshots are retained locally. The signed app remains installed and running on the dedicated staging Simulator. Other worktrees and the other Simulator were preserved.
+
 All three PRs remain open and unmerged. App staging deploys and Simulator evidence do not establish production or physical-device readiness. The remaining live checks above are explicit limits, not hidden passes.
