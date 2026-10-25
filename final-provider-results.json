@@ -1,0 +1,110 @@
+{
+  "environment": "local current API with real OpenAI provider; isolated SQLite fixture identity",
+  "run": "c9cc4ca724",
+  "assertions": [
+    {
+      "name": "Create Main plus two side chats through real API/provider",
+      "passed": true
+    },
+    {
+      "name": "Independent hosted sessions share one actual provider workspace",
+      "passed": true
+    },
+    {
+      "name": "Foreign chat ownership denied before provider work",
+      "passed": true
+    },
+    {
+      "name": "Global reset requires internal authentication",
+      "passed": true
+    },
+    {
+      "name": "Global reset invalidates Main and both side chats",
+      "passed": true
+    },
+    {
+      "name": "Repeated global reset is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Eight same-chat HTTP requests share one refreshed provider session",
+      "passed": true
+    },
+    {
+      "name": "Another chat refreshes independently",
+      "passed": true
+    },
+    {
+      "name": "Exactly one real provider creation per stale side chat",
+      "passed": true
+    },
+    {
+      "name": "Different chats enter provider creation concurrently",
+      "passed": true
+    },
+    {
+      "name": "Side refreshes leave Main session unchanged",
+      "passed": true
+    },
+    {
+      "name": "Refreshed sides reuse the same workspace",
+      "passed": true
+    },
+    {
+      "name": "Each side retains exactly one previous-session reference",
+      "passed": true
+    },
+    {
+      "name": "Returned refreshed sessions are retrievable from real provider",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "This is local API/actual-provider evidence, not staging deployment or native/browser UI proof.",
+    "No remote application database, Storage, payment, email or SMS credentials were loaded.",
+    "Tool failure transport/persistence is covered separately by local regression tests.",
+    "SDK has no environment deletion operation; only smoke-created sessions are deleted, leaving the shared environment to provider-managed expiration."
+  ],
+  "timeline": [
+    {
+      "chat_id": "785f85ce-f30e-4237-8816-5ddeae4d83c0",
+      "start": 86241.291804583,
+      "end": 86242.763573416,
+      "session_id": "sess_07b2c9d4940e8017006ade93d16470819bb3bb672ef0d214e3"
+    },
+    {
+      "chat_id": "81be3eff-b5f9-478e-b433-b4df8254dd66",
+      "start": 86241.293577583,
+      "end": 86244.741176375,
+      "session_id": "sess_0161ba13ab348b0f006ade93d1916c819980247656c4f804dc"
+    }
+  ],
+  "passed": true,
+  "cleanup": [
+    {
+      "session_id": "sess_0161ba13ab348b0f006ade93d1916c819980247656c4f804dc",
+      "deleted": true
+    },
+    {
+      "session_id": "sess_0fd1b2dda032d77e006ade93c99494819a9afbb2292d3247ed",
+      "deleted": true
+    },
+    {
+      "session_id": "sess_0b564ea0d226a037006ade93cfac40819b9fa28c4052de6099",
+      "deleted": true
+    },
+    {
+      "session_id": "sess_06b4c8e40f321357006ade93cd00f8819ba09a6cd36946bac2",
+      "deleted": true
+    },
+    {
+      "session_id": "sess_07b2c9d4940e8017006ade93d16470819bb3bb672ef0d214e3",
+      "deleted": true
+    }
+  ],
+  "provider_environment_count": 1,
+  "base_commit": "46604933e74d89207efaa3c365d91557b06f7ec7",
+  "conversation_delivery_sha256": "41d9fbce08a0641405da3150b77d7bfc9c848d68e67760c4d1acb17a0af58148",
+  "working_tree_patch_sha256": "8449db408c83d8f5c3589b42aa192e728b4b17c3dab6a5123b77e3a720f303c0",
+  "local_database_removed": true
+}

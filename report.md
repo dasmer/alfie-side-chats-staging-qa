@@ -2,7 +2,7 @@
 
 October 25, 2026. No PRs merged and no app production deployment. Real staging UI evidence uses disposable Hollywood test identities and synthetic files only.
 
-## Reviewed revisions
+## Staging UI revisions
 
 | Repository | PR | Revision |
 |---|---|---|
@@ -92,3 +92,19 @@ An initial upload/reset smoke assumed a submitted turn was already busy; the pro
 Temporary UI projects, OTP bridge, QA auth files and credential-bearing setup traces were removed. Six complete passing Simulator walkthrough result bundles and exported screenshots are retained locally, including the follow-up Live and picker-upload runs. The signed app remains installed and running on the dedicated staging Simulator. Other worktrees and the other Simulator were preserved.
 
 All three PRs remain open and unmerged. App staging deploys and Simulator evidence do not establish production or physical-device readiness. The remaining live checks above are explicit limits, not hidden passes.
+
+
+## Final API verification after review fixes
+
+Final API revision: `a9bde3e32ecd559c576c4f3c8c2b87c57ba1599b`. The current API was tested locally; staging UI evidence above remains at its explicitly listed revisions. No merge or app deployment was performed.
+
+- Full API suite: **4,385 passed, 55 skipped, 4 warnings**. Optional integration skips remain explicit.
+- Exact gates: `uv run ruff check .` and `uv run mypy .` passed (487 source files).
+- Actual-provider local HTTP smoke: **14/14 passed**. Main and two sides share one hosted workspace; admin reset invalidates all three and is idempotent; eight concurrent requests share one side replacement while another side refreshes independently. Ownership, workspace reuse and retained references pass.
+- Tool failure regressions use real local MCP HTTP/thread/background-report persistence with stubbed external tool work. Browser, Google, Henry and AgentPhone retain side attribution; a subsequent Main request does not inherit scope. Google uses its separate signing key.
+- The parallel review found one additional edge: cancelling all refresh waiters could leave a completed task cached and bypass the next reset once. This was reproduced, fixed with completion-time cleanup and a done-task check, then covered by the final full suite.
+- Scope review found no remaining blocking issues. The design remains one metadata table, three chat management routes, existing workspace/Files paths and one reused in-memory refresh map. Existing database expected-session checks remain. No additional persistence, queues or services were added.
+- All five smoke-created provider sessions were deleted; isolated SQLite removed. One shared environment is left to provider-managed expiration because the SDK has no deletion operation. No remote app DB, Storage, payment, email or SMS credentials were loaded. No new UI/audio/Storage live claim is made by this API smoke.
+- GitHub Actions still cannot start because of account billing/spending limits; local results above are independent evidence.
+
+[Actual-provider assertions](final-provider-results.json). Full local log: `/tmp/side-chats-final-current-full-suite.log`.
