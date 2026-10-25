@@ -1,0 +1,46 @@
+[
+  {
+    "case": "Multipart side-chat upload accepted",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Manual reset of idle upload session accepted",
+    "status": 200,
+    "result": "pass"
+  },
+  {
+    "case": "Independent Main turn accepted",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Side cancellation request",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Side cancellation idempotent retry",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Uploaded account file exact bytes",
+    "status": 200,
+    "result": "pass"
+  },
+  {
+    "case": "Foreign uploaded file denied",
+    "status": 404,
+    "result": "pass"
+  },
+  {
+    "case": "Main finishes independently of replacement-side cancellation",
+    "result": "pass"
+  },
+  {
+    "case": "Uploaded bytes survive source-session replacement",
+    "status": 200,
+    "result": "pass"
+  }
+]

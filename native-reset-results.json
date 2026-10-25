@@ -1,0 +1,22 @@
+[
+  {
+    "case": "Replace Simulator-generated file source session",
+    "result": "pass",
+    "status": 200
+  },
+  {
+    "case": "Simulator-generated exact file bytes survive source replacement",
+    "status": 200,
+    "result": "pass"
+  },
+  {
+    "case": "Replace Simulator-generated file source session",
+    "result": "pass",
+    "status": 200
+  },
+  {
+    "case": "Simulator-generated exact file bytes survive source replacement",
+    "status": 200,
+    "result": "pass"
+  }
+]

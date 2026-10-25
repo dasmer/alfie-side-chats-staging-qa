@@ -1,0 +1,17 @@
+[
+  {
+    "case": "Simulator-generated account file exact bytes",
+    "result": "pass",
+    "status": 200
+  },
+  {
+    "case": "Scheduled runtime availability",
+    "status": 409,
+    "result": "blocked_feature_disabled"
+  },
+  {
+    "case": "Foreign/unknown chat voice context denied",
+    "status": 404,
+    "result": "pass"
+  }
+]

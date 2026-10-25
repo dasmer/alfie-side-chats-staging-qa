@@ -1,0 +1,40 @@
+[
+  {
+    "case": "Submit side work for real cancellation",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Observe provider busy before testing reset/cancel",
+    "status": "in_progress",
+    "result": "pass"
+  },
+  {
+    "case": "Busy session reset is rejected",
+    "status": 409,
+    "result": "pass"
+  },
+  {
+    "case": "Cancel the observed busy side",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Repeat busy-side cancellation idempotently",
+    "status": 202,
+    "result": "pass"
+  },
+  {
+    "case": "Independent Main finishes after side cancellation",
+    "result": "pass"
+  },
+  {
+    "case": "Observed busy side becomes idle after cancellation",
+    "result": "pass"
+  },
+  {
+    "case": "Replace the cancelled idle session",
+    "status": 200,
+    "result": "pass"
+  }
+]

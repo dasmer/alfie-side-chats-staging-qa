@@ -1,0 +1,15 @@
+[
+  {
+    "case": "Native-deleted file content denied",
+    "status": 404,
+    "result": "pass"
+  },
+  {
+    "case": "History reload 1 retains tombstone without old download",
+    "result": "pass"
+  },
+  {
+    "case": "History reload 2 retains tombstone without old download",
+    "result": "pass"
+  }
+]
